@@ -1,24 +1,53 @@
+using System.Resources;
 using UnityEngine;
-using UnityEngine.Events;
+using TMPro;
 
-public class ResourceManagerScript : MonoBehaviour
+public class ResourceManager : MonoBehaviour
 {
-    public int currentHappiness;
+    public TMP_Text goldText;
+    public TMP_Text happinessText;
+    public static ResourceManager Instance;
+    public int gold = 100;
+    public int happiness = 100;
 
-    public int currentWealth;
-
-    public UnityEvent wealthChanged;
-    public UnityEvent happinessChanged;
-
-    public void OnWealthChange(int amount)
+    void Awake()
     {
-        currentWealth += amount;
-        wealthChanged.Invoke();
+        Instance = this;
+    }
+    public void Start()
+    {
+        GoldDisplay();
+        HappinessDisplay();
     }
 
-    public void OnHappinessChange(int amount)
+
+    public void ChangeResources(int goldChange, int happinessChange)
     {
-        currentHappiness += amount;
-        happinessChanged.Invoke();
+        gold += goldChange;
+        happiness += happinessChange;
+
+        Debug.Log($"Gold: {gold}, Happiness: {happiness}");
+
+        if (gold < 0 || happiness <= 0)
+        {
+            GameOver();
+        }
+        GoldDisplay();
+        HappinessDisplay();
+    }
+
+    private void GameOver()
+    {
+        Debug.Log("Game Over!");
+    }
+
+    public void GoldDisplay()
+    {
+        goldText.text = "Wealth: " + gold.ToString();
+    }
+
+    public void HappinessDisplay()
+    {
+        happinessText.text = $"Happiness: {happiness}";
     }
 }

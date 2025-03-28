@@ -1,7 +1,8 @@
 using UnityEngine;
 using TMPro;
+using System.Resources;
 
-public class WealthUIScript : MonoBehaviour
+public class HappinessUIScript : MonoBehaviour
 {
     public TMP_Text textComponent;
     public ResourceManager resourceManager;
@@ -13,6 +14,6 @@ public class WealthUIScript : MonoBehaviour
     }
     private void Update()
     {
-        textComponent.text = $"Wealth: {resourceManager.gold}";
+        textComponent.text = $"Happiness: {resourceManager.happiness}";
     }
 }
