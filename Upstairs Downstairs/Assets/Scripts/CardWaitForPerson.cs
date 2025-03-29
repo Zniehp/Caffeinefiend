@@ -2,12 +2,9 @@ using UnityEngine;
 
 public class CardWaitForPerson : MonoBehaviour
 {
-    private GameObject kaart;
+    public GameObject kaart;
+    public GameObject evilKaart;
 
-    private void Awake()
-    {
-        kaart = gameObject.transform.Find("Kaart").gameObject;
-    }
     public void EnableCard()
     {
         kaart.SetActive(true);
@@ -17,4 +14,14 @@ public class CardWaitForPerson : MonoBehaviour
     {
         kaart.SetActive(false);
     }
+    public void EvilEnableCard() 
+    {
+        evilKaart.SetActive(true);
+    }
+        public void EvilDisableCard() 
+    {
+        evilKaart.SetActive(false);
+    }
+
+
 }

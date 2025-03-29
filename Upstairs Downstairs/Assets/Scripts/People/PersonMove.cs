@@ -91,8 +91,8 @@ public class PersonMove : MonoBehaviour
                 {
                     waitingAtEvilKing = true;
                     EnableEvilCard();
-                    carddisplay.DrawCard();
-                    yield return null;
+                    EvilCardDisplay.Instance.StartEvilKingSequence();
+                    yield break;
                 }
             }
             yield return new WaitForSeconds(1 / tickrate);
@@ -103,7 +103,13 @@ public class PersonMove : MonoBehaviour
         Debug.Log("waitingAtKing");
         GameObject obj = GameObject.Find("Canvas");
         cardwaitforpersonscript = obj.GetComponent<CardWaitForPerson>();
-        cardwaitforpersonscript.EnableCard();
+        cardwaitforpersonscript.EvilEnableCard();
+    }
+    public void DisableEvilCard()
+    {
+        GameObject obj = GameObject.Find("Canvas");
+        cardwaitforpersonscript = obj.GetComponent<CardWaitForPerson>();
+        cardwaitforpersonscript.EvilDisableCard();
     }
 
     public void StartGoBackFromKing()

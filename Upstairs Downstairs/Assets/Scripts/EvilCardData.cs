@@ -1,17 +1,19 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewCardData", menuName = "Card System/CardData")]
-public class CardData : ScriptableObject
+[CreateAssetMenu(fileName = "NewCardData", menuName = "Card System/EvilCardData")]
+public class EvilCardData : ScriptableObject
 {
     public string title;
     public string description;
+    
     public int cardNumber;
+
     public int goldChangeIfYes;
     public int happinessChangeIfYes;
     public int goldChangeIfNo;
     public int happinessChangeIfNo;
 
-    public void ApplyEffect(bool accepted)
+    public void EvilApplyEffect(bool accepted)
     {
         if (accepted)
         {
