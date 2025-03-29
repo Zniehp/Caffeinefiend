@@ -3,6 +3,7 @@ using UnityEngine.AI;
 using UnityEngine.Events;
 using System.Collections;
 using System.Runtime.CompilerServices;
+using static UnityEditor.Progress;
 public class PersonMove : MonoBehaviour
 {
     [SerializeField]
@@ -31,10 +32,12 @@ public class PersonMove : MonoBehaviour
 
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
+    private Renderer _renderer;
 
 
     private void Start()
     {
+
         carddisplay = FindAnyObjectByType<CardDisplay>();
         waitingAtKing = false;
         currentpointindex = 1;
@@ -45,12 +48,14 @@ public class PersonMove : MonoBehaviour
 
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        _renderer = GetComponentInChildren<Renderer>();
         FlipToLeft();
 
         StartCoroutine(MoveTowardsKing());
     }
     private IEnumerator MoveTowardsKing()
     {
+        SetLayerFront();
         while (waitingAtKing == false)
         {
             float step = movementSpeed * Time.deltaTime;
@@ -86,6 +91,7 @@ public class PersonMove : MonoBehaviour
     }
     public IEnumerator MoveToEvilKing()
     {
+        SetLayerBack();
         FlipToRight();
         SetAnimationWalk();
         while (waitingAtEvilKing == false)
@@ -130,6 +136,7 @@ public class PersonMove : MonoBehaviour
     }
     private IEnumerator GoBackFromKing()
     {
+        SetLayerFront();
         FlipToRight();
         SetAnimationWalk();
         while (isOffScreen == false)
@@ -149,6 +156,7 @@ public class PersonMove : MonoBehaviour
                 else
                 {
                     personSpawner.SpawnSecondButler();
+                    carddisplay.ChangeCardToSecondButler();
                 }
 
                 Destroy(gameObject);
@@ -229,6 +237,16 @@ public class PersonMove : MonoBehaviour
     private void FlipToLeft()
     {
         _spriteRenderer.flipX = true;
+    }
+
+    private void SetLayerFront()
+    {
+        _renderer.sortingLayerName = "ForeGround";
+    }
+
+    private void SetLayerBack()
+    {
+        _renderer.sortingLayerName = "InBetween";
     }
 }
 

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6193958905972040454}
   - component: {fileID: 4557451774453103691}
   - component: {fileID: -1402077743383668188}
-  - component: {fileID: 851189506935035566}
   - component: {fileID: 10982775571887066}
   m_Layer: 0
   m_Name: PersonTemplate
@@ -50,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 10
   evilKingChance: 1
-  personWaitingPoint: {x: -5.5, y: -0.15, z: 0}
+  personWaitingPoint: {x: -6, y: -0.15, z: 0}
   waitingAtKing: 0
   pointsToEvilKing:
   - {fileID: 5832439640687501537, guid: 637800078331253459a6b99c1ac36b9a, type: 3}
@@ -58,7 +57,7 @@ MonoBehaviour:
   - {fileID: 3385538827758746524, guid: cf2e8f704720ea245864bf784a9c70f3, type: 3}
   - {fileID: 5232963423423874129, guid: bb4695c5536e55e4dba865176ac23b18, type: 3}
   tickrate: 240
-  offScreen: {x: 10, y: -0.15, z: 0}
+  offScreen: {x: 12, y: -0.15, z: 0}
   canGoToEvilKing: 1
   SpawnsSecondButler: 0
 --- !u!58 &-1402077743383668188
@@ -97,18 +96,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
---- !u!114 &851189506935035566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3197739774585040085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22618574f3dfc5547a7b6575becf779e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &10982775571887066
 Animator:
   serializedVersion: 7
@@ -204,8 +191,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -286606291
-  m_SortingLayer: 3
+  m_SortingLayerID: -1425824667
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 6122165710468171997, guid: b7202b21fcc2a8141b5d45d73d5e30f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

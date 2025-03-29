@@ -13,6 +13,11 @@ public class PersonSpawner : MonoBehaviour
     public GameObject robincape;
     public GameObject trader;
 
+
+    private void Start()
+    {
+        SpawnFirstButler();
+    }
     private void SpawnFirstButler()
     {
         Instantiate(firstButler, transform.position, Quaternion.identity);

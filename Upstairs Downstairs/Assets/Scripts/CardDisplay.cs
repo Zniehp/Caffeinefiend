@@ -33,14 +33,14 @@ public class CardDisplay : MonoBehaviour
     [SerializeField]
     private int tradercards;
 
+    public CardData firstButlerCard;
+    public CardData secondButlerCard;
+
     void Awake()
     {
         Instance = this;
-    }
-
-    void Start()
-    {
-        DrawCard();
+        currentCard = firstButlerCard;
+        UpdateCard();
     }
 
     void Update()
@@ -177,4 +177,19 @@ public class CardDisplay : MonoBehaviour
             personSpawner.SpawnTrader();
         }
     }
+
+    public void ChangeCardToSecondButler()
+    {
+        currentCard = secondButlerCard;
+        UpdateCard();
+    }
+
+    public void UpdateCard()
+    {
+        titleText.text = currentCard.title;
+        descriptionText.text = currentCard.description;
+
+        cardRectTransform.position = new Vector3(0, 0, 0);
+    }
 }
+

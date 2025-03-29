@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 10982775571887066, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3ffa046b669eac243b7d06b61fde663c, type: 2}
     - target: {fileID: 3197739774585040085, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
       propertyPath: m_Name
       value: Trader
