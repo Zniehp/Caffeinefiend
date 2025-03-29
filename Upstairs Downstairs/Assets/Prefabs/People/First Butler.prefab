@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: First Butler
       objectReference: {fileID: 0}
+    - target: {fileID: 4557451774453103691, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
+      propertyPath: canGoToEvilKing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557451774453103691, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
+      propertyPath: SpawnsSecondButler
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6193958905972040454, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -60,25 +68,5 @@ PrefabInstance:
     - {fileID: 851189506935035566, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3197739774585040085, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -4374714042491194166}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
---- !u!1 &1731173157588377710 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3197739774585040085, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
-  m_PrefabInstance: {fileID: 3775982077287615675}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &-4374714042491194166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731173157588377710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ec84d66a02afb24cb64954e18886f70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

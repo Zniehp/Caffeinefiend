@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class SecondButlerScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private PersonSpawner personSpawner;
+    private void Awake()
     {
-        
+        PersonSpawner personspawner = FindAnyObjectByType<PersonSpawner>();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void SpawnSecondButler()
     {
-        
+        personSpawner.SpawnSecondButler();
     }
 }

@@ -98,7 +98,7 @@ public class CardDisplay : MonoBehaviour
 
         ApplyEffect(accepted);
 
-        MakePersonMoveTowardsEvilKing();
+        MakePersonMove();
     }
 
 
@@ -120,11 +120,11 @@ public class CardDisplay : MonoBehaviour
     }
 
     //moving person towards evil king
-    void MakePersonMoveTowardsEvilKing()
+    void MakePersonMove()
     {
         PersonMove personmove = FindAnyObjectByType<PersonMove>();
         personmove.waitingAtKing = false;
-        personmove.StartGoBackFromKing();
+        personmove.DecideWhereToGo();
         Debug.Log("moving back");
         personmove.DisableCard();
     }

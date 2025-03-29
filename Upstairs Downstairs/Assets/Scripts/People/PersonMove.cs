@@ -8,6 +8,9 @@ public class PersonMove : MonoBehaviour
     [SerializeField]
     private float movementSpeed;
 
+    [SerializeField]
+    private float evilKingChance;
+
     public Vector3 personWaitingPoint;
     public bool waitingAtKing;
     private CardWaitForPerson cardwaitforpersonscript;
@@ -22,12 +25,15 @@ public class PersonMove : MonoBehaviour
     public Vector3 offScreen;
     private bool isOffScreen;
     private PersonSpawner personSpawner;
+    public bool canGoToEvilKing;
+    public bool SpawnsSecondButler;
+    private bool waitingAtEvilKing;
 
     private void Start()
     {
         carddisplay = FindAnyObjectByType<CardDisplay>();
         waitingAtKing = false;
-        currentpointindex = 0;
+        currentpointindex = 1;
         StartCoroutine(MoveTowardsKing());
         GameObject obj = GameObject.Find("Canvas");
         cardwaitforpersonscript = obj.GetComponent<CardWaitForPerson>();
@@ -45,6 +51,7 @@ public class PersonMove : MonoBehaviour
             if (distanceToWaitingSpot <= 0.1f)
             {
                 waitingAtKing = true;
+                carddisplay.DrawCard();
                 EnableCard();
                 yield return null;
             }
@@ -70,7 +77,7 @@ public class PersonMove : MonoBehaviour
     }
     public IEnumerator MoveToEvilKing()
     {
-        while (waitingAtKing == false)
+        while (waitingAtEvilKing == false)
         {
             float step = movementSpeed * Time.deltaTime;
 
@@ -80,9 +87,9 @@ public class PersonMove : MonoBehaviour
             if (distanceToWaitingSpot <= 0.1f)
             {
                 currentpointindex += 1;
-                if (currentpointindex == 3)
+                if (currentpointindex == 4)
                 {
-                    waitingAtKing = true;
+                    waitingAtEvilKing = true;
                     EnableEvilCard();
                     carddisplay.DrawCard();
                     yield return null;
@@ -108,16 +115,14 @@ public class PersonMove : MonoBehaviour
         while (isOffScreen == false)
         {
             float step = movementSpeed * Time.deltaTime;
-
             
             transform.position = Vector3.MoveTowards(transform.position, offScreen, step);
             float distanceToWaitingSpot = Vector3.Distance(offScreen, gameObject.transform.position);
             if (distanceToWaitingSpot <= 0.1f)
             {
                 isOffScreen = true;
-                RandomPersonScript personscript = GetComponent<RandomPersonScript>();
 
-                if (personscript != null)
+                if (SpawnsSecondButler == false)
                 {
                     personSpawner.SpawnRandomPerson();
                 }
@@ -128,6 +133,57 @@ public class PersonMove : MonoBehaviour
 
                 Destroy(gameObject);
                 yield return null;
+            }
+            yield return new WaitForSeconds(1 / tickrate);
+        }
+    }
+
+    public void DecideWhereToGo()
+    {
+        if (waitingAtEvilKing == false)
+        {
+            if (canGoToEvilKing == true)
+            {
+                float random = Random.Range(0, 1);
+                if (random <= evilKingChance)
+                {
+                    StartCoroutine(MoveToEvilKing());
+                }
+                else
+                {
+                    StartCoroutine(GoBackFromKing());
+                }
+            }
+            else
+            {
+                StartCoroutine(GoBackFromKing());
+            }
+        }
+        else
+        {
+            StartCoroutine(MoveBackFromEvilKing());
+        }
+    }
+
+    public IEnumerator MoveBackFromEvilKing()
+    {
+        waitingAtEvilKing = false;
+        currentpointindex = 3;
+        while (waitingAtKing == false)
+        {
+            float step = movementSpeed * Time.deltaTime;
+
+            targetPosition = pointsToEvilKing[currentpointindex];
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition.position, step);
+            float distanceToWaitingSpot = Vector3.Distance(targetPosition.position, gameObject.transform.position);
+            if (distanceToWaitingSpot <= 0.1f)
+            {
+                currentpointindex -= 1;
+                if (currentpointindex == -1)
+                {
+                    StartCoroutine(GoBackFromKing());
+                    yield return null;
+                }
             }
             yield return new WaitForSeconds(1 / tickrate);
         }
