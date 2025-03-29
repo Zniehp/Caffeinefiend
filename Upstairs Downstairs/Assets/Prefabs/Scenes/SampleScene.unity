@@ -2469,7 +2469,18 @@ MonoBehaviour:
   descriptionText: {fileID: 2127000752}
   cardRectTransform: {fileID: 1273339644}
   evilAvailableCards:
+  - {fileID: 11400000, guid: a344582fb15f44545852661d220328e9, type: 2}
+  - {fileID: 11400000, guid: 25bada880d7928c4fbc53e7294d59c91, type: 2}
+  - {fileID: 11400000, guid: 2c87ca34ac662734f85f661fecbdaaea, type: 2}
+  - {fileID: 11400000, guid: 5f3906b9e5844d24691ef656241db7e1, type: 2}
+  - {fileID: 11400000, guid: 786ccb8086b2f414e884ed84f25990ec, type: 2}
+  - {fileID: 11400000, guid: 9f7715c635a42fb4baee7a044f99f048, type: 2}
+  - {fileID: 11400000, guid: bbf9865c065289c40807a7d7b8594aa7, type: 2}
+  - {fileID: 11400000, guid: 35ef2021dad223f498589794ad800145, type: 2}
+  - {fileID: 11400000, guid: dd11a56869d1b7b4f978dd4e9a866696, type: 2}
+  - {fileID: 11400000, guid: 13b3b8b91c1458d408481ca2c694a727, type: 2}
   - {fileID: 11400000, guid: 43aaaadd0fef4fd4e9ff43fea9dcdc4a, type: 2}
+  - {fileID: 11400000, guid: 87227ebf8912a7147ac6e7d7850b2d27, type: 2}
   zerocard: {fileID: 11400000, guid: 87227ebf8912a7147ac6e7d7850b2d27, type: 2}
 --- !u!4 &1614577549
 Transform:

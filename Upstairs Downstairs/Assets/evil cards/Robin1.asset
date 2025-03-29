@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b94a4e4f6bd46448de2fe9badde038, type: 3}
+  m_Name: Robin1
+  m_EditorClassIdentifier: 
+  title: 'The Outlaw '
+  description: "Hey\u2026 y\u2019know that filthy rich merchant? He thinks he\u2019s
+    so slick and cool, hoarding wealth and exploiting the poor. I wanna knock him
+    down a peg and raid his storage facility take everything he\u2019s got. Or, I
+    could terrorize the nobles he bows down to, make them feel the fear he hides
+    behind. "
+  cardNumber: 0
+  goldChangeIfYes: 10
+  happinessChangeIfYes: -15
+  goldChangeIfNo: 0
+  happinessChangeIfNo: -40

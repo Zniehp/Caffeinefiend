@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b94a4e4f6bd46448de2fe9badde038, type: 3}
+  m_Name: Farmer2
+  m_EditorClassIdentifier: 
+  title: 'A Necessary Alliance '
+  description: "The people are starving, and my fields are defenseless. The king\u2019s
+    soldiers are well-trained, but their price is far too high. On the other hand,
+    I could strike a deal with the bandits they\u2019re cheaper, though their loyalty
+    is far from guaranteed. "
+  cardNumber: 0
+  goldChangeIfYes: 30
+  happinessChangeIfYes: -10
+  goldChangeIfNo: 0
+  happinessChangeIfNo: -40

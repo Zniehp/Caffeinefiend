@@ -3,7 +3,6 @@ using UnityEngine.AI;
 using UnityEngine.Events;
 using System.Collections;
 using System.Runtime.CompilerServices;
-using static UnityEditor.Progress;
 public class PersonMove : MonoBehaviour
 {
     [SerializeField]

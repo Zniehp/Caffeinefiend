@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b94a4e4f6bd46448de2fe9badde038, type: 3}
+  m_Name: Bob1
+  m_EditorClassIdentifier: 
+  title: 'The Raging Alcoholic '
+  description: "Bob\u2019s drowning in his own demons caused by his alcoholism, he
+    wants to commit genocide, wipe out anyone he sees as a threat. I could give him
+    the power to carry out his madness, or I could send him to rehab, help him fight
+    his addiction, and maybe save him from himself. "
+  cardNumber: 0
+  goldChangeIfYes: 0
+  happinessChangeIfYes: -50
+  goldChangeIfNo: 100
+  happinessChangeIfNo: 100

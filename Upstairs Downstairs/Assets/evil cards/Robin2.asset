@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b94a4e4f6bd46448de2fe9badde038, type: 3}
+  m_Name: Robin2
+  m_EditorClassIdentifier: 
+  title: 'Imperial Revenue Service '
+  description: "Why pay the Empire\u2019s greedy taxes when I can raid the IRS and
+    take back what\u2019s mine? I could expose their corruption, or I could go further
+    commit tax fraud, leave them scrambling, and keep all the wealth for myself. "
+  cardNumber: 0
+  goldChangeIfYes: -30
+  happinessChangeIfYes: 15
+  goldChangeIfNo: -15
+  happinessChangeIfNo: 0

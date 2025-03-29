@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b94a4e4f6bd46448de2fe9badde038, type: 3}
+  m_Name: Peasant1
+  m_EditorClassIdentifier: 
+  title: 'The Price Of Freedom '
+  description: 'Peasants are conspiring against the kingdom, and they demand change.
+    A revolution is brewing, you can either suppress them yourself or pay me a pretty
+    penny to redirect their efforts towards the neighboring kingdom. '
+  cardNumber: 0
+  goldChangeIfYes: 0
+  happinessChangeIfYes: -30
+  goldChangeIfNo: -20
+  happinessChangeIfNo: 0

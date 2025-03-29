@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b94a4e4f6bd46448de2fe9badde038, type: 3}
+  m_Name: Bob2
+  m_EditorClassIdentifier: 
+  title: 'Bob The Omnipotent '
+  description: "Bob\u2019s building powers are far too great to be ignored. I could
+    let him become a cult leader, using his influence to control the kingdom from
+    the shadows and manipulate all who follow him. Or, I could channel his abilities
+    for something greater, make him a hero of the continent, and have him protect
+    and rebuild the world. "
+  cardNumber: 0
+  goldChangeIfYes: -100
+  happinessChangeIfYes: -50
+  goldChangeIfNo: 100
+  happinessChangeIfNo: 70

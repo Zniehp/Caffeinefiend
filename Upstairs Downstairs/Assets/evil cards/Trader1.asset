@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9b94a4e4f6bd46448de2fe9badde038, type: 3}
-  m_Name: NewCardData
+  m_Name: Trader1
   m_EditorClassIdentifier: 
-  title: reeeeeeee
-  description: 4 sucky wucky for 1 carrot
+  title: 'The Mad Merchant '
+  description: 'The orphanage is bad for business, charity makes people lazy. Burn
+    it down, and the desperate will work for anything. But if the king gives me a
+    gun instead well, I can remove the real obstacles to my success. '
   cardNumber: 0
-  goldChangeIfYes: 0
-  happinessChangeIfYes: 5
-  goldChangeIfNo: -1000
-  happinessChangeIfNo: 0
+  goldChangeIfYes: 50
+  happinessChangeIfYes: -70
+  goldChangeIfNo: 0
+  happinessChangeIfNo: -10
