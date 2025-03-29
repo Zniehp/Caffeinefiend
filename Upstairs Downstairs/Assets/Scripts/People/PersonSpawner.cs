@@ -11,7 +11,8 @@ public class PersonSpawner : MonoBehaviour
 
     private void Start()
     {
-        SpawnFirstButler();
+        // SpawnFirstButler();
+        SpawnRandomPerson();
     }
 
 

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07552975c059501438385e01e8a07a37, type: 3}
+  m_Name: PeasantConstructingBar
+  m_EditorClassIdentifier: 
+  title: The peasant's bar
+  description: The local peasant has recently gotten inspired to build a bar but
+    he needs money to do such a thing.
+  cardNumber: 0
+  goldChangeIfYes: -30
+  happinessChangeIfYes: 25
+  goldChangeIfNo: 0
+  happinessChangeIfNo: -5

@@ -9,6 +9,8 @@ public class ResourceManager : MonoBehaviour
     public static ResourceManager Instance;
     public int gold = 100;
     public int happiness = 100;
+    public GameObject canvas;
+    public GameObject canvas2;
 
     void Awake()
     {
@@ -39,6 +41,8 @@ public class ResourceManager : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("Game Over!");
+        GameOverMenuScript gameOverMenuScript = canvas2.GetComponent<GameOverMenuScript>();
+        gameOverMenuScript.OnLoseGame();
     }
 
     public void GoldDisplay()

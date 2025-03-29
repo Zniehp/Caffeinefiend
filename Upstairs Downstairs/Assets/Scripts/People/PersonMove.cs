@@ -29,16 +29,25 @@ public class PersonMove : MonoBehaviour
     public bool SpawnsSecondButler;
     private bool waitingAtEvilKing;
 
+    private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
+
+
     private void Start()
     {
         carddisplay = FindAnyObjectByType<CardDisplay>();
         waitingAtKing = false;
         currentpointindex = 1;
-        StartCoroutine(MoveTowardsKing());
         GameObject obj = GameObject.Find("Canvas");
         cardwaitforpersonscript = obj.GetComponent<CardWaitForPerson>();
         personSpawner = FindAnyObjectByType<PersonSpawner>();
         isOffScreen = false;
+
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        FlipToLeft();
+
+        StartCoroutine(MoveTowardsKing());
     }
     private IEnumerator MoveTowardsKing()
     {
@@ -50,6 +59,7 @@ public class PersonMove : MonoBehaviour
             float distanceToWaitingSpot = Vector3.Distance(personWaitingPoint, gameObject.transform.position);
             if (distanceToWaitingSpot <= 0.1f)
             {
+                SetAnimationIdle();
                 waitingAtKing = true;
                 carddisplay.DrawCard();
                 EnableCard();
@@ -77,6 +87,8 @@ public class PersonMove : MonoBehaviour
     }
     public IEnumerator MoveToEvilKing()
     {
+        FlipToRight();
+        SetAnimationWalk();
         while (waitingAtEvilKing == false)
         {
             float step = movementSpeed * Time.deltaTime;
@@ -89,6 +101,7 @@ public class PersonMove : MonoBehaviour
                 currentpointindex += 1;
                 if (currentpointindex == 4)
                 {
+                    SetAnimationIdle();
                     waitingAtEvilKing = true;
                     EnableEvilCard();
                     EvilCardDisplay.Instance.StartEvilKingSequence();
@@ -118,6 +131,8 @@ public class PersonMove : MonoBehaviour
     }
     private IEnumerator GoBackFromKing()
     {
+        FlipToRight();
+        SetAnimationWalk();
         while (isOffScreen == false)
         {
             float step = movementSpeed * Time.deltaTime;
@@ -173,6 +188,8 @@ public class PersonMove : MonoBehaviour
 
     public IEnumerator MoveBackFromEvilKing()
     {
+        FlipToLeft();
+        SetAnimationWalk();
         waitingAtEvilKing = false;
         currentpointindex = 3;
         while (waitingAtKing == false)
@@ -193,6 +210,26 @@ public class PersonMove : MonoBehaviour
             }
             yield return new WaitForSeconds(1 / tickrate);
         }
+    }
+
+    private void SetAnimationWalk()
+    {
+        _animator.SetBool("IsWalking", true);
+    }
+
+    private void SetAnimationIdle()
+    {
+        _animator.SetBool("IsWalking", false);
+    }
+
+    private void FlipToRight()
+    {
+        _spriteRenderer.flipX = false;
+    }
+
+    private void FlipToLeft()
+    {
+        _spriteRenderer.flipX = true;
     }
 }
 
