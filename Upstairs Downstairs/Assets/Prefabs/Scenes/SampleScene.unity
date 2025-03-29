@@ -893,9 +893,30 @@ MonoBehaviour:
   descriptionText: {fileID: 352450292}
   cardRectTransform: {fileID: 2059064756}
   availableCards:
+  - {fileID: 11400000, guid: c80092787fd2419488c5997fda90dd92, type: 2}
+  - {fileID: 11400000, guid: 89870ac1160dc5d40beb23f09a9491d6, type: 2}
+  - {fileID: 11400000, guid: 8a351a172a22f5243b57abfcbec1c7b2, type: 2}
+  - {fileID: 11400000, guid: 708c78f188fc58a41b32fb8dc0dba22c, type: 2}
+  - {fileID: 11400000, guid: 2e491f38e78880946afdcb90f0df2979, type: 2}
+  - {fileID: 11400000, guid: 89519cbf2585a8c4284a2d594e507237, type: 2}
+  - {fileID: 11400000, guid: ba80ccb33131b3047b9a5b45d2835ed1, type: 2}
+  - {fileID: 11400000, guid: 7a0b8520a14f9234195ab8828e11933f, type: 2}
+  - {fileID: 11400000, guid: 21f3871e5a115a24ba998dc91203746e, type: 2}
+  - {fileID: 11400000, guid: e86a071dca946b741bccd4b308f5aea9, type: 2}
+  - {fileID: 11400000, guid: 83d52e0e8cbdde34b93b3743577c6747, type: 2}
+  - {fileID: 11400000, guid: fc4b31c7d22cad640945d09e27417e36, type: 2}
+  - {fileID: 11400000, guid: 2f2e2e53383e918498bd2034fc77f1ff, type: 2}
   - {fileID: 11400000, guid: a49f863a94117ee42b5431684bf153c8, type: 2}
-  - {fileID: 11400000, guid: b42d6e60db276b7419f6b71f9c2599a9, type: 2}
-  - {fileID: 11400000, guid: d6ead6ec0bd6080408b509718e10fbf2, type: 2}
+  - {fileID: 11400000, guid: 73199442a571d6942a9b396cc9c30bbd, type: 2}
+  - {fileID: 11400000, guid: e5e883da791caa446b403c56b0f4b813, type: 2}
+  - {fileID: 11400000, guid: eeb68c06726f7eb4ba65deba79767e15, type: 2}
+  zerocard: {fileID: 11400000, guid: 9e06d29e5917a454bbc2d3b84444030d, type: 2}
+  personSpawner: {fileID: 1595369168}
+  bobcards: 3
+  farmercards: 7
+  peasantcards: 10
+  robincapecards: 12
+  tradercards: 16
 --- !u!4 &1035590668
 Transform:
   m_ObjectHideFlags: 0
@@ -2390,12 +2411,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8c3ede2a49c624e965ea8b1702dfcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  People:
-  - {fileID: 6209647852919795322, guid: 8fef61760e37d514896fbcc15e84fea0, type: 3}
-  - {fileID: 6715507306005250417, guid: 3fdc6048a19c6314e9c6e6a374069255, type: 3}
-  - {fileID: 6586754351173636451, guid: 52c0fa20d8398cb42b6a2b630bed5bc9, type: 3}
   firstButler: {fileID: 1731173157588377710, guid: 98ca068893cc5c24abc53c19fb8ebb3e, type: 3}
   secondButler: {fileID: 8008122676638382417, guid: e902825fc8b85704c9b0be5371dfe303, type: 3}
+  bob: {fileID: 3197739774585040085, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
+  peasant: {fileID: 6209647852919795322, guid: 8fef61760e37d514896fbcc15e84fea0, type: 3}
+  farmer: {fileID: 6715507306005250417, guid: 3fdc6048a19c6314e9c6e6a374069255, type: 3}
+  robincape: {fileID: 3197739774585040085, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
+  trader: {fileID: 6586754351173636451, guid: 52c0fa20d8398cb42b6a2b630bed5bc9, type: 3}
 --- !u!4 &1595369169
 Transform:
   m_ObjectHideFlags: 0
@@ -2445,6 +2467,7 @@ MonoBehaviour:
   cardRectTransform: {fileID: 1273339644}
   evilAvailableCards:
   - {fileID: 11400000, guid: 43aaaadd0fef4fd4e9ff43fea9dcdc4a, type: 2}
+  zerocard: {fileID: 11400000, guid: 87227ebf8912a7147ac6e7d7850b2d27, type: 2}
 --- !u!4 &1614577549
 Transform:
   m_ObjectHideFlags: 0

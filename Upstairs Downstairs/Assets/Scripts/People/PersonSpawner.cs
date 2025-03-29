@@ -4,25 +4,14 @@ using UnityEngine;
 
 public class PersonSpawner : MonoBehaviour
 {
-    public List<GameObject> People;
     private int personToSpawnIndex;
     public GameObject firstButler;
     public GameObject secondButler;
-
-    private void Start()
-    {
-        // SpawnFirstButler();
-        SpawnRandomPerson();
-    }
-
-
-    public void SpawnRandomPerson()
-    {
-        personToSpawnIndex = Random.Range(0, People.Count);
-        GameObject personToSpawn = People[personToSpawnIndex];
-
-        Instantiate(personToSpawn, transform.position, Quaternion.identity);
-    }
+    public GameObject bob;
+    public GameObject peasant;
+    public GameObject farmer;
+    public GameObject robincape;
+    public GameObject trader;
 
     private void SpawnFirstButler()
     {
@@ -33,5 +22,24 @@ public class PersonSpawner : MonoBehaviour
     {
         Instantiate(secondButler, transform.position, Quaternion.identity);
     }
-
+    public void SpawnBob()
+    {
+        Instantiate(bob, transform.position, Quaternion.identity);
+    }
+    public void SpawnPeasant()
+    {
+        Instantiate(peasant, transform.position, Quaternion.identity);
+    }
+    public void SpawnFarmer()
+    {
+        Instantiate(farmer, transform.position, Quaternion.identity);
+    }
+    public void SpawnRobinCape()
+    {
+        Instantiate(robincape, transform.position, Quaternion.identity);
+    }
+    public void SpawnTrader()
+    {
+        Instantiate(trader, transform.position, Quaternion.identity);
+    }
 }

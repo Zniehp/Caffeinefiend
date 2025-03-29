@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 10982775571887066, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3197739774585040085, guid: eaeb8835bd3dbfb4db30c0939e8e2dc0, type: 3}
       propertyPath: m_Name
       value: First Butler

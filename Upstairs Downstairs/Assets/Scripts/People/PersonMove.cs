@@ -61,7 +61,6 @@ public class PersonMove : MonoBehaviour
             {
                 SetAnimationIdle();
                 waitingAtKing = true;
-                carddisplay.DrawCard();
                 EnableCard();
                 yield return null;
             }
@@ -145,7 +144,7 @@ public class PersonMove : MonoBehaviour
 
                 if (SpawnsSecondButler == false)
                 {
-                    personSpawner.SpawnRandomPerson();
+                    carddisplay.DrawCard();
                 }
                 else
                 {

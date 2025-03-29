@@ -12,10 +12,26 @@ public class CardDisplay : MonoBehaviour
 
     public CardData[] availableCards;
     private CardData currentCard;
+    public CardData zerocard;
 
     private Vector2 touchStartPos;
     private float swipeThreshold = 100f;
     private float swipeSpeed = 5f;
+
+    private int currentCardIndex;
+
+    public PersonSpawner personSpawner;
+
+    [SerializeField]
+    private int bobcards;
+    [SerializeField]
+    private int farmercards;
+    [SerializeField]
+    private int peasantcards;
+    [SerializeField]
+    private int robincapecards;
+    [SerializeField]
+    private int tradercards;
 
     void Awake()
     {
@@ -105,13 +121,16 @@ public class CardDisplay : MonoBehaviour
     private void ApplyEffect(bool accepted)
     {
         currentCard.ApplyEffect(accepted);
+
+        currentCard = zerocard;
     }
 
     public void DrawCard()
     {
+        RandomCard();
         if (availableCards.Length > 0)
         {
-            currentCard = availableCards[Random.Range(0, availableCards.Length)];
+            currentCard = availableCards[currentCardIndex];
             titleText.text = currentCard.title;
             descriptionText.text = currentCard.description;
 
@@ -127,5 +146,35 @@ public class CardDisplay : MonoBehaviour
         personmove.DecideWhereToGo();
         Debug.Log("moving back");
         personmove.DisableCard();
+    }
+
+    void RandomCard()
+    {
+       currentCardIndex = Random.Range(0, availableCards.Length);
+        if (currentCardIndex <= bobcards)
+        {
+            Debug.Log("picked bob");
+            personSpawner.SpawnBob();
+        }
+        else if (currentCardIndex <= farmercards)
+        {
+            Debug.Log("farmercards");
+            personSpawner.SpawnFarmer();
+        }
+        else if (currentCardIndex <= peasantcards)
+        {
+            Debug.Log("picked peasant");
+            personSpawner.SpawnPeasant();
+        }
+        else if (currentCardIndex <= robincapecards)
+        {
+            Debug.Log("picked RobinCape");
+            personSpawner.SpawnRobinCape();
+        }
+        else if (currentCardIndex <= tradercards)
+        {
+            Debug.Log("picked trader");
+            personSpawner.SpawnTrader();
+        }
     }
 }

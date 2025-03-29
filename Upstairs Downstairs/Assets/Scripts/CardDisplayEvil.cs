@@ -12,6 +12,7 @@ public class EvilCardDisplay : MonoBehaviour
 
     public EvilCardData[] evilAvailableCards;
     private EvilCardData currentCard;
+    public EvilCardData zerocard;
 
     private Vector2 touchStartPos;
     private float swipeThreshold = 100f;
@@ -72,8 +73,8 @@ public class EvilCardDisplay : MonoBehaviour
 
         cardRectTransform.position = targetPosition;
         PersonMove personmove = FindAnyObjectByType<PersonMove>();
+        ApplyEffect(accepted);
         personmove.DisableEvilCard();
-        CardDisplay.Instance.DrawCard();
     }
 
     private void EvilDrawCard()
@@ -86,5 +87,11 @@ public class EvilCardDisplay : MonoBehaviour
 
             cardRectTransform.anchoredPosition = new Vector3(0, 0, 0);
         }
+    }
+
+    private void ApplyEffect(bool accepted)
+    {
+        currentCard.EvilApplyEffect(accepted);
+        currentCard = zerocard;
     }
 }

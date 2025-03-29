@@ -16,6 +16,6 @@ MonoBehaviour:
   description: 4 sucky wucky for 1 carrot
   cardNumber: 0
   goldChangeIfYes: 0
-  happinessChangeIfYes: 0
+  happinessChangeIfYes: 5
   goldChangeIfNo: -1000
   happinessChangeIfNo: 0
