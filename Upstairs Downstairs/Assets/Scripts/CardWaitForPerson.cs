@@ -2,9 +2,19 @@ using UnityEngine;
 
 public class CardWaitForPerson : MonoBehaviour
 {
+    private GameObject kaart;
+
+    private void Awake()
+    {
+        kaart = gameObject.transform.Find("Kaart").gameObject;
+    }
     public void EnableCard()
     {
-        GameObject childByName = gameObject.transform.Find("Kaart").gameObject;
-        childByName.SetActive(true);
+        kaart.SetActive(true);
+    }
+
+    public void DisableCard()
+    {
+        kaart.SetActive(false);
     }
 }

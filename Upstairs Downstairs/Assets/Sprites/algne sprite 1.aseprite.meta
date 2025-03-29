@@ -72,9 +72,9 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -85,9 +85,9 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638787852855037844
+  platformSettingsDirtyTick: 638787913791398850
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -2118,1067 +2118,1352 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 166, y: 1089}
-  spriteSheetImportData: []
+  spriteSheetImportData:
+  - name: algne sprite 1_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 766
+      width: 320
+      height: 180
+    spriteID: 40010f4b54a2f864aa025824c797a8cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: algne sprite 1_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 577
+      width: 320
+      height: 181
+    spriteID: a92ae6b3e165880458ea091a6d7e9cce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: algne sprite 1_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 387
+      width: 320
+      height: 182
+    spriteID: 49f3b8729553010418f885c4456e7ee6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: algne sprite 1_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 196
+      width: 320
+      height: 183
+    spriteID: 7ca04d6065846bc4ab56e7cddde76bb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: algne sprite 1_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 320
+      height: 184
+    spriteID: 489b38e3247b04044989afbf401626c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
-  - layerIndex: 3
+  - layerIndex: 0
     guid: 405904966
     name: wall
     layerFlags: 35
     layerType: 1
     blendMode: 0
-    cells: []
+    cells:
+    - name: Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 180
+      spriteId: 287ce67c35df2d34db555dbc2529b21c
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 320
+        height: 181
+      spriteId: 212ed20b3774dc14b94a90abb7152eb4
+    - name: Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 320
+        height: 182
+      spriteId: f08e4145beeb26a448eb64f9aa6fddfd
+    - name: Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -3
+        width: 320
+        height: 183
+      spriteId: d7cb957dff229f942b4c4cae1e32842d
+    - name: Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -4
+        width: 320
+        height: 184
+      spriteId: d2dd2dd3458b80c4eba2083daed34cd7
     linkedCells: []
     parentIndex: -1
-  - layerIndex: 4
+  - layerIndex: 0
     guid: -289008171
     name: wall_up
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: wall_up_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 95
+        y: 0
         width: 320
-        height: 85
+        height: 180
       spriteId: 157536e2434823347bb08ca5f1b6b4a5
-    - name: wall_up_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 95
+        y: -1
         width: 320
-        height: 85
+        height: 181
       spriteId: cb3b0946b68054244b557a59e8231675
-    - name: wall_up_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 95
+        y: -2
         width: 320
-        height: 85
+        height: 182
       spriteId: fb0c45bc8723f3a499553637d61f7de5
-    - name: wall_up_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 95
+        y: -3
         width: 320
-        height: 85
+        height: 183
       spriteId: eb7ebf40f54c06349967e4a431abd878
-    - name: wall_up_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 95
+        y: -4
         width: 320
-        height: 85
+        height: 184
       spriteId: 657f77bfa75fbe44f9014ce4ca24d40d
     linkedCells: []
-    parentIndex: 3
-  - layerIndex: 5
+    parentIndex: -1
+  - layerIndex: 0
     guid: 2106244656
     name: Wall_down
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Wall_down_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 320
-        height: 85
+        height: 180
       spriteId: 05ccf91a235dfd447b9af2367bae7a68
-    - name: Wall_down_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
+        y: -1
         width: 320
-        height: 85
+        height: 181
       spriteId: e7bbc27b30502e6489ee615fb88510f7
-    - name: Wall_down_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
+        y: -2
         width: 320
-        height: 85
+        height: 182
       spriteId: 061a136b1fd5d614fad48c9ca9e6d974
-    - name: Wall_down_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
+        y: -3
         width: 320
-        height: 85
+        height: 183
       spriteId: 9573d5580c9ce9a4790d74710b90c3e6
-    - name: Wall_down_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
+        y: -4
         width: 320
-        height: 85
+        height: 184
       spriteId: c9bc796d2ed4b024ebae02fa9867d2a3
     linkedCells: []
-    parentIndex: 3
-  - layerIndex: 6
+    parentIndex: -1
+  - layerIndex: 0
     guid: 705104477
     name: window frame
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: window frame_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 65
+        x: 0
         y: 0
-        width: 200
-        height: 177
+        width: 320
+        height: 180
       spriteId: 2882af38f93000949a153e59d4f2ba1a
-    - name: window frame_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 65
-        y: 0
-        width: 200
-        height: 177
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 364a435a143d5ba4c840e579e59b64f9
-    - name: window frame_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 65
-        y: 0
-        width: 200
-        height: 177
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 3d9af0b0473abbb448bafdc53d334673
-    - name: window frame_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 65
-        y: 0
-        width: 200
-        height: 177
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: aa34b4f1dc529a04398a5239fe1bb13e
-    - name: window frame_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 65
-        y: 0
-        width: 200
-        height: 177
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 1534ff0eb410be24bb6f9db48e25787f
     linkedCells: []
     parentIndex: -1
-  - layerIndex: 7
+  - layerIndex: 0
     guid: 1328739014
     name: escalator
     layerFlags: 3
     layerType: 1
     blendMode: 0
-    cells: []
+    cells:
+    - name: Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 180
+      spriteId: 2882af38f93000949a153e59d4f2ba1a
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 320
+        height: 181
+      spriteId: 364a435a143d5ba4c840e579e59b64f9
+    - name: Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 320
+        height: 182
+      spriteId: 3d9af0b0473abbb448bafdc53d334673
+    - name: Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -3
+        width: 320
+        height: 183
+      spriteId: aa34b4f1dc529a04398a5239fe1bb13e
+    - name: Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -4
+        width: 320
+        height: 184
+      spriteId: 1534ff0eb410be24bb6f9db48e25787f
     linkedCells: []
     parentIndex: -1
-  - layerIndex: 8
+  - layerIndex: 0
     guid: 21772848
     name: B_escalator
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: B_escalator_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 76
+        x: 0
         y: 0
-        width: 154
-        height: 115
+        width: 320
+        height: 180
       spriteId: 67439c65b896ae543bdb4c379ae61507
-    - name: B_escalator_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 76
-        y: 0
-        width: 154
-        height: 115
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: e782be775e0ae254385e4bbc8cd2c3cb
-    - name: B_escalator_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 76
-        y: 0
-        width: 154
-        height: 115
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: eaf4384103b842c4ca104fa9fd5c63d9
-    - name: B_escalator_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 76
-        y: 0
-        width: 154
-        height: 115
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: 2cbf94ab6e3df8e42835f1d1dbdaf45b
-    - name: B_escalator_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 76
-        y: 0
-        width: 154
-        height: 115
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: db6fa918997798a4f899b8fae496da42
     linkedCells: []
-    parentIndex: 7
-  - layerIndex: 9
+    parentIndex: -1
+  - layerIndex: 0
     guid: 1008577717
     name: steps_escalator
     layerFlags: 19
     layerType: 0
     blendMode: 0
     cells:
-    - name: steps_escalator_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 105
+        x: 0
         y: 0
-        width: 98
-        height: 90
+        width: 320
+        height: 180
       spriteId: f8398e7c28f2b6b47bdcf73dda6cd570
-    - name: steps_escalator_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 106
+        x: 0
         y: -1
-        width: 98
-        height: 90
+        width: 320
+        height: 181
       spriteId: 11dd1f484aeb41d4a923d6b281c8821b
-    - name: steps_escalator_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 107
+        x: 0
         y: -2
-        width: 98
-        height: 90
+        width: 320
+        height: 182
       spriteId: 94517e5fbb32bad4b99d6d93e6285f31
-    - name: steps_escalator_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 108
+        x: 0
         y: -3
-        width: 98
-        height: 90
+        width: 320
+        height: 183
       spriteId: 0dbe06bdc6ae78642b45c39916b81171
-    - name: steps_escalator_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 109
+        x: 0
         y: -4
-        width: 98
-        height: 90
+        width: 320
+        height: 184
       spriteId: a2fa4cd20e846ee49897811624b3cc7f
     linkedCells: []
-    parentIndex: 7
-  - layerIndex: 10
+    parentIndex: -1
+  - layerIndex: 0
     guid: 168835500
     name: F_escalator
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: F_escalator_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 68
+        x: 0
         y: 0
-        width: 154
-        height: 115
+        width: 320
+        height: 180
       spriteId: 200c424bc98a03b44a468600df7c6397
-    - name: F_escalator_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 68
-        y: 0
-        width: 154
-        height: 115
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 5c00c771caec0bb4ab6753801c71a719
-    - name: F_escalator_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 68
-        y: 0
-        width: 154
-        height: 115
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 43fb24f1ae64a5947bc11b525457cce7
-    - name: F_escalator_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 68
-        y: 0
-        width: 154
-        height: 115
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: 448b4a53121a6b548a17d957b7c5251a
-    - name: F_escalator_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 68
-        y: 0
-        width: 154
-        height: 115
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 324a7879e102b1b439b0b521ffdbd56a
     linkedCells: []
-    parentIndex: 7
-  - layerIndex: 11
+    parentIndex: -1
+  - layerIndex: 0
     guid: 1776456860
     name: floor
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: floor_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 320
-        height: 95
+        height: 180
       spriteId: 937202548df5b66478747b258c78f0a1
-    - name: floor_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
+        y: -1
         width: 320
-        height: 95
+        height: 181
       spriteId: ee3272a8172f3584face3b2f4fb10c0a
-    - name: floor_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
+        y: -2
         width: 320
-        height: 95
+        height: 182
       spriteId: 7e6b4cc45d96fc645bcab32f1f34d684
-    - name: floor_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
+        y: -3
         width: 320
-        height: 95
+        height: 183
       spriteId: d9ddeca7a8f4f244da6fbfb0885b2df6
-    - name: floor_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
+        y: -4
         width: 320
-        height: 95
+        height: 184
       spriteId: 43739c5f0793273479413c563fc2644b
     linkedCells: []
     parentIndex: -1
-  - layerIndex: 12
+  - layerIndex: 0
     guid: 2137539988
     name: taha troon
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: taha troon_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 287
-        y: 2
-        width: 17
-        height: 29
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: 6b593f10780f79e41921d0986dbdd868
-    - name: taha troon_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 287
-        y: 2
-        width: 17
-        height: 29
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: c5cace57bfe9599479c24910c285d939
-    - name: taha troon_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 287
-        y: 2
-        width: 17
-        height: 29
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 91bd8ec39d515304fbfd28c656b3a3df
-    - name: taha troon_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 287
-        y: 2
-        width: 17
-        height: 29
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: 052ee6e70b271084b81f012f6ce6390a
-    - name: taha troon_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 287
-        y: 2
-        width: 17
-        height: 29
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 5d1963ac4f25ec74e9e4e169691bcbed
     linkedCells: []
     parentIndex: -1
-  - layerIndex: 13
+  - layerIndex: 0
     guid: -2112687973
     name: Taga troon
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Taga troon_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 17
-        height: 29
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: 30ccdca53ced13041855a186162e128c
-    - name: Taga troon_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 17
-        height: 29
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 39671194a642d6142b1ff743daf1f663
-    - name: Taga troon_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 17
-        height: 29
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 90c2fcb316a07914ba1a1d0cff618109
-    - name: Taga troon_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 17
-        height: 29
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: 97b6016352796104b9db31ca7b3a7d49
-    - name: Taga troon_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 17
-        height: 29
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 606dde1fd3a39b94abe7245032b1a75f
     linkedCells: []
     parentIndex: -1
-  - layerIndex: 14
+  - layerIndex: 0
     guid: 933185168
     name: hea kunn
     layerFlags: 35
     layerType: 1
     blendMode: 0
-    cells: []
+    cells:
+    - name: Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 180
+      spriteId: 30ccdca53ced13041855a186162e128c
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 320
+        height: 181
+      spriteId: 39671194a642d6142b1ff743daf1f663
+    - name: Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 320
+        height: 182
+      spriteId: 90c2fcb316a07914ba1a1d0cff618109
+    - name: Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -3
+        width: 320
+        height: 183
+      spriteId: 97b6016352796104b9db31ca7b3a7d49
+    - name: Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -4
+        width: 320
+        height: 184
+      spriteId: 606dde1fd3a39b94abe7245032b1a75f
     linkedCells: []
     parentIndex: -1
-  - layerIndex: 15
+  - layerIndex: 0
     guid: -2069673823
     name: head
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: head_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 25
-        y: 108
-        width: 8
-        height: 10
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: bf8fc1e07d2c87440b796ffcba89cb82
-    - name: head_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 25
-        y: 108
-        width: 8
-        height: 10
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 4f1798d5716d03a4284ded017ad43e76
-    - name: head_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 25
-        y: 108
-        width: 8
-        height: 10
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 2e202c91285cce241915c48d012d4c52
-    - name: head_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 25
-        y: 108
-        width: 8
-        height: 10
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: d2fa06ba89ef06f4c8a7cae2df732617
-    - name: head_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 25
-        y: 108
-        width: 8
-        height: 10
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: e65501a973fe7e940bcb10be344ed4e9
     linkedCells: []
-    parentIndex: 14
-  - layerIndex: 16
+    parentIndex: -1
+  - layerIndex: 0
     guid: -577495167
     name: body
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: body_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 28
-        y: 95
-        width: 4
-        height: 20
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: 1bc1ffc04cd1dd0448802b616f8c9237
-    - name: body_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 28
-        y: 95
-        width: 4
-        height: 20
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: e5212c14adbb1d64491c52b0b578c86d
-    - name: body_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 28
-        y: 95
-        width: 4
-        height: 20
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 9cfe7923d525de340ad86a5ed007c377
-    - name: body_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 28
-        y: 95
-        width: 4
-        height: 20
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: fe754e28c991ed94b950ac5b839a1453
-    - name: body_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 28
-        y: 95
-        width: 4
-        height: 20
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 53f4445159bf9a14f922fcca7beea25c
     linkedCells: []
-    parentIndex: 14
-  - layerIndex: 17
+    parentIndex: -1
+  - layerIndex: 0
     guid: -1753332630
     name: Cape
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Cape_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 19
-        y: 95
-        width: 13
-        height: 19
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: fbaa220b5d6337f40af2acd9ed8a1de1
-    - name: Cape_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 19
-        y: 95
-        width: 13
-        height: 19
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 25a03c8d1030a1444af92f1c537081f3
-    - name: Cape_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 19
-        y: 95
-        width: 13
-        height: 19
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 5628fb8b934c3ed48a4267e08775ca0d
-    - name: Cape_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 19
-        y: 95
-        width: 13
-        height: 19
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: f4064b492476f2545a3bbcb15725c4cc
-    - name: Cape_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 19
-        y: 95
-        width: 13
-        height: 19
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 8aecc0651b9c1104686e8649cc0d62a0
     linkedCells: []
-    parentIndex: 14
-  - layerIndex: 18
+    parentIndex: -1
+  - layerIndex: 0
     guid: 1213303904
     name: crown
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: crown_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 24
-        y: 116
-        width: 11
-        height: 10
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: d89a4d9aed8eeea4a8d38ff349c23f5f
-    - name: crown_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 24
-        y: 116
-        width: 11
-        height: 10
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 3bae6ee993ed5fd4c8d1c735780200db
-    - name: crown_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 24
-        y: 116
-        width: 11
-        height: 10
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: abe54c6644f76c142a06d9c44f0aacd7
-    - name: crown_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 24
-        y: 116
-        width: 11
-        height: 10
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: f4bef5767bfc78e428c04fd5823a42f8
-    - name: crown_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 24
-        y: 116
-        width: 11
-        height: 10
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: e6744c459d453a840bb4eb81be66b835
     linkedCells: []
-    parentIndex: 14
-  - layerIndex: 19
+    parentIndex: -1
+  - layerIndex: 0
     guid: 1722067241
     name: halb kunn
     layerFlags: 35
     layerType: 1
     blendMode: 0
-    cells: []
+    cells:
+    - name: Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 180
+      spriteId: d89a4d9aed8eeea4a8d38ff349c23f5f
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 320
+        height: 181
+      spriteId: 3bae6ee993ed5fd4c8d1c735780200db
+    - name: Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 320
+        height: 182
+      spriteId: abe54c6644f76c142a06d9c44f0aacd7
+    - name: Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -3
+        width: 320
+        height: 183
+      spriteId: f4bef5767bfc78e428c04fd5823a42f8
+    - name: Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -4
+        width: 320
+        height: 184
+      spriteId: e6744c459d453a840bb4eb81be66b835
     linkedCells: []
     parentIndex: -1
-  - layerIndex: 20
+  - layerIndex: 0
     guid: -348150220
     name: head
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: head_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 288
-        y: 15
-        width: 8
-        height: 10
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: c98c1d7eff47ffb4ea604b50bdacab75
-    - name: head_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 288
-        y: 15
-        width: 8
-        height: 10
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 9feae24c62ea8a54f89a705b791674d9
-    - name: head_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 288
-        y: 15
-        width: 8
-        height: 10
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 349777aea67c1df419cc82be9748a772
-    - name: head_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 288
-        y: 15
-        width: 8
-        height: 10
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: 944d92783b1010745a83b00f47c3dd7d
-    - name: head_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 288
-        y: 15
-        width: 8
-        height: 10
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 3b4ec19209db6e241a99fce4c5b6ca9a
     linkedCells: []
-    parentIndex: 19
-  - layerIndex: 21
+    parentIndex: -1
+  - layerIndex: 0
     guid: -99582626
     name: body
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: body_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 4
-        height: 20
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: f2f0e7e0bd1f5be4f9a92dc09d868b2e
-    - name: body_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 4
-        height: 20
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 624e239f168106342adba0d19eaec9c0
-    - name: body_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 4
-        height: 20
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: d4ce1ef42780bef409cd81b1ff5eca72
-    - name: body_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 4
-        height: 20
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: 819e2a81f163a1e40a77a6307735ad7e
-    - name: body_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 4
-        height: 20
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: a01be754890646e4e951c42239ee300e
     linkedCells: []
-    parentIndex: 19
-  - layerIndex: 22
+    parentIndex: -1
+  - layerIndex: 0
     guid: -993352527
     name: Cape
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Cape_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 13
-        height: 24
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: 2e304d10396c3884c93b2ba4c3753059
-    - name: Cape_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 13
-        height: 24
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 74f21b52c9db9f847bbda6f50be8fa88
-    - name: Cape_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 13
-        height: 24
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: afd4fa02b0bd1b743b65a70391dee110
-    - name: Cape_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 13
-        height: 24
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: 86c10e7a714e0024f87a19ad8ad6014b
-    - name: Cape_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 289
-        y: 2
-        width: 13
-        height: 24
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 6abd3685cfa614048a8f69b19c01212e
     linkedCells: []
-    parentIndex: 19
-  - layerIndex: 23
+    parentIndex: -1
+  - layerIndex: 0
     guid: -1061878587
     name: crown
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: crown_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 286
-        y: 23
-        width: 11
-        height: 10
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: 81524d9da02b25e41978502fed8b1116
-    - name: crown_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 286
-        y: 23
-        width: 11
-        height: 10
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 6af7a1cdc5eba9949a999a9f2352e7a6
-    - name: crown_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 286
-        y: 23
-        width: 11
-        height: 10
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 87bcd6e47b81e344fa942e3bfeea4b0a
-    - name: crown_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 286
-        y: 23
-        width: 11
-        height: 10
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: 36f660dc6635f0c48a341276154fce16
-    - name: crown_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 286
-        y: 23
-        width: 11
-        height: 10
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 94ca196fb7247e441b0fa436f2148740
     linkedCells: []
-    parentIndex: 19
-  - layerIndex: 24
+    parentIndex: -1
+  - layerIndex: 0
     guid: -999517517
     name: eest troon
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: eest troon_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 290
-        y: 2
-        width: 14
-        height: 29
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: dae943bd5a281dd4eaca95f803c49f04
-    - name: eest troon_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 290
-        y: 2
-        width: 14
-        height: 29
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: f906691714078af4b97360dc8ed0f65a
-    - name: eest troon_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 290
-        y: 2
-        width: 14
-        height: 29
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: aefebe3b492d87e4297d5fd7a5a9ef36
-    - name: eest troon_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 290
-        y: 2
-        width: 14
-        height: 29
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: 77c06df1921f0c74eb89f98ec1705fa4
-    - name: eest troon_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 290
-        y: 2
-        width: 14
-        height: 29
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: b0c1c157af4fd534f9fa2a9c5c03f6c4
     linkedCells: []
     parentIndex: -1
-  - layerIndex: 25
+  - layerIndex: 0
     guid: 678012631
     name: ees troon
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: ees troon_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 14
-        height: 29
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       spriteId: 6dc5ced33080d7241955d44de2055f78
-    - name: ees troon_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 14
-        height: 29
+        x: 0
+        y: -1
+        width: 320
+        height: 181
       spriteId: 73314b3cf5731794dbe91d58abb3547e
-    - name: ees troon_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 14
-        height: 29
+        x: 0
+        y: -2
+        width: 320
+        height: 182
       spriteId: 20c5391a9a6f327488048c647d27a1df
-    - name: ees troon_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 14
-        height: 29
+        x: 0
+        y: -3
+        width: 320
+        height: 183
       spriteId: a41151ac67830d44094d3ee591351f14
-    - name: ees troon_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 95
-        width: 14
-        height: 29
+        x: 0
+        y: -4
+        width: 320
+        height: 184
       spriteId: 0c698e296adb21c409dbdfeb1b6c0b55
     linkedCells: []
     parentIndex: -1
@@ -3223,4 +3508,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 320, y: 180}
-  previousTextureSize: {x: 1024, y: 2048}
+  previousTextureSize: {x: 512, y: 1024}

@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-
+using UnityEngine.Events;
 public class CardDisplay : MonoBehaviour
 {
     public static CardDisplay Instance;
@@ -98,7 +98,7 @@ public class CardDisplay : MonoBehaviour
 
         ApplyEffect(accepted);
 
-        DrawCard();
+        MakePersonMoveTowardsEvilKing();
     }
 
 
@@ -117,5 +117,15 @@ public class CardDisplay : MonoBehaviour
 
             cardRectTransform.position = new Vector3(0, 0, 0);
         }
+    }
+
+    //moving person towards evil king
+    void MakePersonMoveTowardsEvilKing()
+    {
+        PersonMove personmove = FindAnyObjectByType<PersonMove>();
+        personmove.waitingAtKing = false;
+        personmove.StartGoBackFromKing();
+        Debug.Log("moving back");
+        personmove.DisableCard();
     }
 }

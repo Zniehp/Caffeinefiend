@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6193958905972040454}
   - component: {fileID: 4557451774453103691}
   - component: {fileID: -1402077743383668188}
+  - component: {fileID: 851189506935035566}
   m_Layer: 0
   m_Name: PersonTemplate
   m_TagString: Untagged
@@ -46,8 +47,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984f1b1abccb6284e9f316f3ff08be90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 6
-  personWaitingPoint: {x: -4.5, y: 0, z: 0}
+  movementSpeed: 12
+  personWaitingPoint: {x: -5.5, y: 0, z: 0}
+  waitingAtKing: 0
+  pointsToEvilKing:
+  - {fileID: 1975344383708082973, guid: b66cc7eaedb2555489d7c2215e3a681d, type: 3}
+  - {fileID: 3385538827758746524, guid: cf2e8f704720ea245864bf784a9c70f3, type: 3}
+  - {fileID: 5232963423423874129, guid: bb4695c5536e55e4dba865176ac23b18, type: 3}
+  tickrate: 240
+  carddisplay: {fileID: 0}
+  offScreen: {x: 10, y: 0, z: 0}
 --- !u!58 &-1402077743383668188
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -84,6 +93,18 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
+--- !u!114 &851189506935035566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3197739774585040085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22618574f3dfc5547a7b6575becf779e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9126066572883441655
 GameObject:
   m_ObjectHideFlags: 0
